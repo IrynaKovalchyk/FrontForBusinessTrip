@@ -6,44 +6,32 @@ import { UserInfo } from '../user-info';
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css']
 })
-export class SignUpComponent implements OnInit {
+export class SignUpComponent  {
 
 
   personalInfoComplete = true;
   addressComplete = false;
-  creditCardComplete = false;
-  completedOrder = false;
+  positionComplete = false;
+  completedRegistration = false;
 
   stepOne = false;
   stepTwo = false;
   stepThree = false;
-
-  customer = false;
-
-
-
-  customerInformation = [];
-
-
-  fruite = ['apple','orange'];
-
+  user = false;
+  userInformation = [];
   userInfoArray: UserInfo;
 
   name;
 
   constructor() { }
 
-  ngOnInit() {
-    console.log('Fruite' + this.fruite.push('banana'));
-    console.log(this.fruite);
-
-  }
+ 
 
   personalInfoSubmit() {
     this.personalInfoComplete = false;
     this.addressComplete = true;
     this.stepOne = true;
-    this.customer = true;
+    this.user = true;
 
 
 
@@ -58,27 +46,14 @@ export class SignUpComponent implements OnInit {
 
   addressSubmit() {
     this.addressComplete = false;
-    this.creditCardComplete = true;
+    this.positionComplete = true;
     this.stepTwo = true;
   }
 
-  creditCardSubmit() {
-    this.creditCardComplete = false;
-    this.completedOrder = true;
+  positionSubmit() {
+    this.positionComplete = false;
+    this.completedRegistration = true;
     this.stepThree = true;
   }
 
 }
-
-// export interface UserInfo {
-//   name:string;
-//   phoneNumber:number;
-//   email:string;
-//   address:any;
-//   zipCode:number;
-//   cityState:any;
-//   nameOnCard:string;
-//   creditCardNumber:number;
-//   expirationDate:number;
-// }
-
