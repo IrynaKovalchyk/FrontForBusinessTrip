@@ -3,8 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DemoComponent } from './demo.component';
 import { ButtonDemoComponent } from './button-demo/button-demo.component';
-import { InputDemoComponent } from './input-demo/input-demo.component';
-import { SnackbarDemoComponent } from './snackbar-demo/snackbar-demo.component';
+
 
 const DEMO_ROUTES: Routes = [
   {
@@ -15,14 +14,8 @@ const DEMO_ROUTES: Routes = [
         path: 'button-demo',
         component: ButtonDemoComponent
       },
-      {
-        path: 'input-demo',
-        component: InputDemoComponent
-      },
-      {
-        path: 'snackbar-demo',
-        component: SnackbarDemoComponent
-      },
+      
+    
       {
         path: '',
         pathMatch: 'full',
