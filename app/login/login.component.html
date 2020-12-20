@@ -1,0 +1,42 @@
+<div class="login-wrapper">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" class="login">
+       
+        <label class="title">
+            <h2 class="welcome" style="font-family:cursive;">Welcome to University business trip applying page</h2>
+            
+            <h4 class="hint">Use your corporate e-mail to sign in </h4>
+        </label>
+       
+        <div class="login-group" >
+            <p style="margin-left: 10px">
+            <input required class="username" 
+              name="email" 
+              [(ngModel)]="user.email" 
+              type="text" 
+              id="login_username" 
+              placeholder="Email"
+              style="color:	#338099 ;font-size:25px;background-color:#white;border-radius: 12px"
+              >
+            </p>
+            <p style="margin-left: 10px">
+            <input required class="password" 
+              name="password" 
+              [(ngModel)]="user.password" 
+              type="password" 
+              id="login_password" 
+              placeholder="Password"
+              style="color:	#338099 ;font-size:25px;background-color:#white;border-radius: 12px"
+              >
+             </p>
+             <p style="margin-left: 10px">
+            <button type="submit"
+            style="color:	white ;font-size:25px;background-color:#338099;border-radius: 12px; "
+              class="btn btn-primary"
+              [disabled]="loginForm.form.invalid">
+                Login
+            </button>
+            </p>
+          </div>
+
+    </form>
+</div>
