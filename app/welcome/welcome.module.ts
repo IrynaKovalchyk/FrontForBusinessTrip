@@ -15,4 +15,4 @@ import { UserComponent } from './user/user.component';
   ],
   exports: []
 })
-export class TestModule { }
+export class WelcomeModule { }

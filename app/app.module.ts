@@ -13,8 +13,9 @@ import { DemoRoutingModule } from './demo/demo-routing.module';
 import { TestRoutingModule } from './test/test-routing.module';
 import { DemoModule } from './demo/demo.module';
 import { TestModule } from './test/test.module';
+import { WelcomeModule } from './welcome/welcome.module';
 import { AppComponent } from './app.component';
-
+import { WelcomeRoutingModule } from './welcome/welcome-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DemoComponent } from './demo/demo.component';
 import { TestComponent } from './test/test.component';
@@ -33,9 +34,10 @@ import { TestComponent } from './test/test.component';
     DemoRoutingModule,
     TestRoutingModule,
     AppRoutingModule,
-
+    WelcomeRoutingModule,
     DemoModule,
-    TestModule
+    TestModule,
+    WelcomeModule
   ],
   entryComponents: [AppComponent],
   declarations: [
