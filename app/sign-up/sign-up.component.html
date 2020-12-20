@@ -22,10 +22,6 @@
 
 
 
-
-
-
-
 <div class="container" *ngIf="personalInfoComplete">
   <div class="one">
     <input type="text" 
@@ -72,28 +68,28 @@
 </div>
 
 
-<div class="container" *ngIf="creditCardComplete">
+<div class="container" *ngIf="positionComplete">
   <div class="one">
     <input type="text" 
            class="input"
-           placeholder="Name on Card">
+           placeholder="Current position">
   </div>
   <div class="two">
     <input type="text" 
            class="input"
-           placeholder="Credit Card Number">
+           placeholder="First language">
   </div>
   <div class="three">
     <input type="text" 
            class="input"
-           placeholder="Experation Date">
+           placeholder="Second language">
   </div>
   <div class="four">
-     <button class="submit" (click)="creditCardSubmit()">Submit</button>
+     <button class="submit" (click)="positionSubmit()">Submit</button>
   </div>
 </div>
 
-<div class="thankYou" *ngIf="completedOrder">Thank You!<br>Your Order is Complete</div>
+<div class="thankYou" *ngIf="completedRegistration">Thank You For Registration !</div>
 
 
 
@@ -104,11 +100,9 @@
 </div>
 
 
-<div *ngIf="customer">
+<div *ngIf="user">
   <div class="customerListItemsContainer">
     <div class="name">{{name}}</div>
     <div class="email">{{email}}</div>
   </div>
 </div>
-
-
