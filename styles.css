@@ -17,38 +17,3 @@ body, input[text], button {
   color: #333;
   font-family: Cambria, Georgia;
 }
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-input[type=submit] {
-  background-color: #3f51b5;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #3f51b5;
-}
-  input[type=text], select {
-  width: 100%;
-  padding: 8px 15px;
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  box-sizing: border-box;
-}
-input[type=date]{
-  border: 1px solid #ccc;
-}
-input:focus { 
-    outline: none !important;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px #719ECE;
-}
