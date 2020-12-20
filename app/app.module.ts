@@ -10,13 +10,11 @@ import { DemoMaterialModule } from './demo-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { DemoRoutingModule } from './demo/demo-routing.module';
 import { TestRoutingModule } from './test/test-routing.module';
-import { DemoModule } from './demo/demo.module';
 import { TestModule } from './test/test.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { DemoComponent } from './demo/demo.component';
 import { TestComponent } from './test/test.component';
 @NgModule({
   imports: [
