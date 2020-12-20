@@ -5,7 +5,7 @@ export interface UserInfo {
   address:any;
   zipCode:number;
   cityState:any;
-  nameOnCard:string;
-  creditCardNumber:number;
-  expirationDate:number;
+  position:string;
+  mainlanguage:string;
+  secondlanguage:string;
 }
