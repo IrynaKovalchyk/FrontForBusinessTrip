@@ -6,13 +6,13 @@ import { DemoComponent } from './demo/demo.component';
 import { TestComponent } from './test/test.component';
 
 const APP_ROUTES: Routes = [
-  {
+  /*{
     path: 'welcome',
     component: WelcomeComponent
-  },
+  },*/
   {
-    path: 'demo',
-    component: DemoComponent
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'test',
