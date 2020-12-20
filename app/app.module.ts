@@ -25,14 +25,9 @@ import { TestComponent } from './test/test.component';
     HttpClientModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-
     DemoMaterialModule,
-
-    DemoRoutingModule,
     TestRoutingModule,
     AppRoutingModule,
-
-    DemoModule,
     TestModule
   ],
   entryComponents: [AppComponent],
@@ -41,7 +36,6 @@ import { TestComponent } from './test/test.component';
     WelcomeComponent,
     HelloComponent, 
     SignUpComponent, 
-    DemoComponent,
     TestComponent]
   ,
   bootstrap: [AppComponent],
