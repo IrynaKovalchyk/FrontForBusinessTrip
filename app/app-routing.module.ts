@@ -19,6 +19,10 @@ const APP_ROUTES: Routes = [
     component: TestComponent
   },
   {
+    path: 'sign-up',
+    component: SignUpComponent
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'welcome'
