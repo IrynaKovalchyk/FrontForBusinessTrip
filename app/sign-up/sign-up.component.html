@@ -25,67 +25,76 @@
 <div class="container" *ngIf="personalInfoComplete">
   <div class="one">
     <input type="text" 
+           style="color:#006666 ;font-size:20px;border-radius: 12px;"
            class="input"
            placeholder="Name"
            [(ngModel)]="name">
   </div>
   <div class="two">
     <input type="text" 
+           style="color:#006666 ;font-size:20px;border-radius: 12px;"
            class="input"
            placeholder="Phone Number"
            [(ngModel)]="phoneNumber">
   </div>
   <div class="three">
-    <input type="text" 
+    <input type="text"
+           style="color:#006666 ;font-size:20px;border-radius: 12px;" 
            class="input"
            placeholder="Email"
            [(ngModel)]="email">
   </div>
   <div class="four">
-     <button class="submit" (click)="personalInfoSubmit()">Submit</button>
+     <button class="submit" (click)="personalInfoSubmit()" style="color:	white ;font-size:15px;background-color:#338099;border-radius: 12px; ">Submit</button>
   </div>
 </div>
 
 <div class="container" *ngIf="addressComplete">
   <div class="one">
-    <input type="text" 
+    <input type="text"
+           style="color:#006666 ;font-size:20px;border-radius: 12px;" 
            class="input"
            placeholder="Address">
   </div>
   <div class="two">
     <input type="text" 
+           style="color:#006666 ;font-size:20px;border-radius: 12px;"
            class="input"
            placeholder="Zip Code">
   </div>
   <div class="three">
     <input type="text" 
+           style="color:#006666 ;font-size:20px;border-radius: 12px;"
            class="input"
            placeholder="City / State">
   </div>
   <div class="four">
-     <button class="submit" (click)="addressSubmit()">Submit</button>
+     <button class="submit" (click)="addressSubmit()" style="color:	white ;font-size:15px;background-color:#338099;border-radius: 12px;">Submit</button>
   </div>
 </div>
 
 
 <div class="container" *ngIf="positionComplete">
   <div class="one">
-    <input type="text" 
+    <input type="text"
+           style="color:#006666 ;font-size:20px;border-radius: 12px;" 
            class="input"
            placeholder="Current position">
   </div>
   <div class="two">
     <input type="text" 
+           style="color:#006666 ;font-size:20px;border-radius: 12px;" 
            class="input"
            placeholder="First language">
   </div>
   <div class="three">
-    <input type="text" 
+    <input type="text"
+           style="color:#006666 ;font-size:20px;border-radius: 12px;"  
            class="input"
            placeholder="Second language">
   </div>
   <div class="four">
-     <button class="submit" (click)="positionSubmit()">Submit</button>
+     <button class="submit" (click)="positionSubmit()" style="color:	white ;font-size:15px;background-color:#338099;border-radius: 12px;">Submit</button>
   </div>
 </div>
 
@@ -94,7 +103,7 @@
 
 
 
-<div class="customerContactContainer">
+<div class="customerContactContainer" style="color:#006666" >
   <div class="nameTitle">Name</div>
   <div class="emailTitle">Email</div>
 </div>
