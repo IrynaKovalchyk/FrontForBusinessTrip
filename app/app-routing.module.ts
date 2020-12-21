@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { DemoComponent } from './demo/demo.component';
 import { TestComponent } from './test/test.component';
-
+import { LoginComponent } from './login/login.component';
 const APP_ROUTES: Routes = [
   /*{
     path: 'welcome',
